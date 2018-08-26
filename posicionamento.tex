@@ -1,0 +1,115 @@
+\section{Posicionamento por meio da Luz Visível} \label{sec:posicionamento}
+
+São três os principais parâmetros de um sistema de VLP a se considerar para o entendimento do modelo básico: o transmissor, o receptor e o ambiente. Eles estão simplificados na Figura~\ref{fig:2}, em que está ilustrado o funcionamento básico da camada física. Importante considerar que a luz emitida traça basicamente dois tipos de caminho para alcançar o receptor, um caminho direto (LOS - \textit{Line-of-Sigh}), e um caminho indireto (NLOS - \textit{Non-Line-of-Sigh.}), proveniente dos sinais luminosos refletidos nas paredes ou obstáculos. As dimensões e geometrias do ambiente determinam o modelo para cada um dos sinais recebidos. Entretanto, a influência dos sinais NLOS para sistemas de baixa taxa de transmissão de dados, como os de posicionamento, é desprezível~\cite{yan2015current}. Neste sistema, a potência do sinal óptico recebida no sensor ($P_{R}$) pode ser modelada pela equação 1, que leva em consideração a potência luminosa emitida ($P_{T}$), a distância entre transmissor e emissor ($d$), o padrão de radiação do emissor de luz em função do ângulo de irradiação ($R_{E}(\phi)$), filtros ópticos ($T(\psi)$)(implementados no hardware do receptor), concentradores ópticos ($G(\psi)$)(lentes), a área física do receptor ($A_{R}$), e por fim o ângulo de incidência do sinal luminoso ($cos(\psi)$)~\cite{de2015test}.
+%
+\begin{figure}[!h]
+    \centering
+    \includegraphics{FIGURA2}
+    \caption[Esquemático básico de sistema de VLP considerando um receptor único, um transmissor LED e os parâmetros espaciais supracitados. A imagem ilustra, também, o padrão Lambertiano de irradiação e o campo de visão de incidência (FOV - \textit{Field of View}).]{Esquemático básico de sistema de VLP considerando um receptor único, um transmissor LED e os parâmetros espaciais supracitados. A imagem ilustra, também, o padrão Lambertiano de irradiação e o campo de visão de incidência (FOV - \textit{Field of View}).\footnotemark}
+    \label{fig:2}
+\end{figure}
+    \footnotetext{O padrão lambertiano é característica intrínseca de um LED de superfície emissora, e tem relação direta com a área efetiva de iluminação do LED. Este padrão modela o comportamento da potência de sinal incidido em função do ângulo $\phi$ em relação à normal do LED~\cite{keiser2014comunicaccoes}.}
+%    
+\begin{equation}
+P_{R} = \frac{P_{T}}{d^2} R_{E} (\phi) T (\psi) G (\psi) A_{R} cos (\psi).
+\end{equation}
+
+Neste modelo, as funções do campo de visão podem ser sintetizadas em apenas um parâmetro, chamado área efetiva de recepção de sinais ($A_{ef} (\psi)$) (Equação 2), dependente das características do sensor utilizado e da implementação ou não de filtros e concentradores ópticos. Enquanto RE é função do padrão lambertiano do LED utilizado no sistema (Equação 3, 4).
+%
+\begin{equation}
+A_{ef} (\psi) = A_{R} cos (\psi) T (\psi) G (\psi).
+\end{equation}
+%
+\begin{equation}
+R_{E} (\phi) = \frac{m + 1}{2 \pi} cos^m (\phi).
+\end{equation}
+
+\noindent onde m é a ordem lambertiana, dependente do semiângulo de emissão ($\varphi_{1 / 2}$) (parâmetro do LED), definido por:~\cite{de2015test,kim2013indoor}
+%
+\begin{equation}
+m = \frac{-ln (2)}{ln ( cos (\phi_\frac{1}{2} ) )}.
+\end{equation}
+
+O conhecimento do comportamento de tais parâmetros se faz de suma importância, como se observa nos métodos de VLP mais relevantes, encontrados na literatura, utilizarem principalmente a amplitude do sinal recebido como parâmetro principal nos algoritmos de posicionamento, conforme será abordado adiante. Nesse contexto, a Figura~\ref{fig:3} ilustra o comportamento da amplitude normalizada do sinal recebido em função da variação de cada parâmetro espacial individualmente.
+%
+\begin{figure*}[tb]
+    \centering
+    \includegraphics[width = 17 cm]{FIGURA3}
+    \caption{Comportamento da amplitude em função da variação a) da distância (d); b) do angulo de incidência ($\psi$); e do ângulo de irradiação ($\phi$).}
+    \label{fig:3}
+\end{figure*}
+
+\subsection{Métodos de Posicionamento}
+
+Diferentes técnicas são estudadas para o processamento dos sinais recebidos de diversas fontes de luz visando o cálculo da posição do receptor conhecendo a posição dos emissores, sendo esse receptor um sensor único ou sensor de imagem (composto por uma matriz de sensores de fotodiodos). As quatro principais técnicas\footnote{Na literatura mais recente~\cite{7737307}, encontra-se essa divisão pela tecnologia de comunicação do canal óptico; diferindo-se de produções anteriores que classificavam pelo método de processamento de sinais~\cite{yan2015current}.} serão aprofundadas para posterior comparação dos resultados obtidos com sua utilização, sendo elas: Divisão Espacial (SDMA), Divisão Temporal (TDMA), Divisão de Frequências (FDMA), Divisão de Código (CDMA)\footnote{Aqui considera-se apenas as tecnologias de acesso múltiplo, desconsiderando o método de proximidade, o qual consiste na detecção de uma série de pontos de referência em uma rede e o posicionamento por detecção desses pontos, devido a sua limitação de precisão na resolução da rede de transmissores~\cite{chunyue2015research,lee2012hybrid}, o que inviabiliza a análise do método para a aplicação em estudo. As siglas são padronizadas com base em~\cite{7737307}, sendo tradução para Space Division Multiple Access, Time Division Multiple Access, Frequency Division Multiple Access e CodeDivisionMultiple Access, respectivamente.}.
+
+\subsubsection{Divisão Espacial}
+
+São classificadas como SDMA as técnicas de posicionamento em que as informações de cada LED são recebidas por partes diferentes do sensor. Ou seja, demandam a utilização de sensores de imagem. Seu princípio de funcionamento consiste na modulação dos LEDs em frequências específicas e aquisição de imagens por meio dos sensores, também em uma dada frequência. Dessa forma, as imagens são processadas para a determinação de sinais luminosos em certas posições e da presença de determinadas frequências. As imagens são decodificadas para se obter a localização dos sinais luminosos. No servidor de processamento deve conter um banco de dados com as coordenadas espaciais relacionadas à frequência emitida por cada LED. Uma vez que os sinais são identificados, algoritmos de localização, como por exemplo Ângulo de Aquisição (AoA - \textit{Angle of Arrival}) determinam a posição do dispositivo receptor~\cite{rahman2011high,kuo2014luxapose}.
+
+A frequência de amostragem e a capacidade de processamento de imagens dos dispositivos são as principais dificuldades da técnica em questão. Câmeras de visão computacional convencionais variam sua taxa de aquisição de 30 fps a 120 fps, o sendo baixa para a análise das frequências emitidas pelos LEDs. Soluções tais como a utilização de câmeras de alta velocidade, aumento da densidade de emissores de luz por área abrangida, e implementação de lentes especiais são estudadas na literatura, entretanto aumentam significativamente o custo de implementação dessa tecnologia~\cite{7737307,nakazawa2013indoor,kuo2014luxapose}.
+
+\subsubsection{Divisão Temporal}
+
+Destoante do método supracitado, a divisão por tempo depende da utilização de apenas um fotosensor na recepção do sinal. A técnica se baseia em cada LED enviar um único pulso de sinal sequencialmente para um dado montante de LEDs que cobrem a mesma área. Cada pulso é enviado com a mesma largura. Dessa forma, o receptor, após um dado período de tempo, adquire sinais de todos os LEDs da área coberta e assimila a potência do sinal recebido de cada transmissor pela posição do pulso no período de tempo.  É importante ressaltar que os demais LEDs do painel, enquanto não estão transmitindo seu sinal, permanecem desligados~\cite{do2014tdoa}, ao menos que seja aplicada uma detecção de colisões no sistema~\cite{li2014epsilon}.
+
+A utilização dessa técnica acarreta algumas desvantagens ao sistema a exemplo a limitação na taxa de transmissão de dados devido à cada transmissor ser capaz de enviar os dados em um pequeno período de tempo, o que causa uma baixa taxa de atualização no posicionamento de um receptor em movimento. Outra desvantagem relevante é a necessidade de sincronismo do sistema, o que acarreta maior custo de implementação e limitação de acessibilidade dos dispositivos.
+
+Na literatura são encontradas implementações por divisão temporal que baseia o processamento dos sinais recebidos principalmente em RSS ou em tempo de chegada (ToA - \textit{Time of Arrival}). Simulações\footnote{Simulações no software MATLAB que forneceram resultado de 3,9 cm de erro máximo em um ambiente de 5x5x3 m (Dimensionamento médio de uma sala residencial).} estimam que o segundo método possa atingir precisões maiores que a maioria dos sistemas de VLP existentes. Entretanto este requer que o receptor porte de um temporizador altamente preciso, devido à pequena distância entre os dispositivos transmissores e receptores face à velocidade da luz~\cite{do2014tdoa,7737307}.
+
+\subsubsection{Divisão de Frequência}
+
+Ainda sobre a perspectiva de utilização de um receptor único, visando alternativas que eliminem a necessidade de sincronização dos transmissores, a tecnologia de FDMA consiste na associação de diferentes frequências a cada LED e processamento dos sinais no domínio da frequência, com a aplicação de FFT no sinal recebido, e cada transmissor pode ser distinguido pelo espectro transmitido. Devido a não sincronização dos dispositivos, o processamento de sinais tem que ser feito por análise de potência do sinal óptico. A independência de sincronização, somada à baixa complexidade necessária no circuito transmissor tornam esse um método com baixo custo de implementação\footnote{Apesar da desvantagem pela perca de eficiência máxima dos dispositivos de LED com a utilização de controladores analógicos.}.
+
+Para o entendimento das limitações da técnica é importante retomar a equação 1, levando em conta que o processamento dos sinais é feito por meio da potência do sinal óptico. A obtenção de informação de distância em função da potência do sinal de dada frequência, ou seja, do sinal associado a um LED, é dependente do ângulo de incidência e do ângulo de irradiação, que em um sistema prático dependem da posição do transmissor e do receptor, e são parâmetros não fixos. As formas encontradas na literatura para minimizar possíveis erros gerados na relação desses parâmetros é a introdução de um fator de correção encontrando os ângulos $\phi$ e $\psi$, ou ainda assumindo um sistema onde o transmissor e receptor estão sempre paralelos e em altura fixa, o que simplifica a equação em:
+%
+\begin{equation}
+d = \sqrt[4]{\frac{P_{T} h^2 A_{R}}{P_{R} \pi}}
+\end{equation}
+
+\subsubsection{Divisão de Código}
+
+Tecnologia que se baseia na transmissão de uma única sequência de informações codificadas (digitais) por cada LED. Apesar da transmissão de dados, o sistema independe de sincronização, devido à característica do receptor de conhecer todos os códigos utilizados em determinada área, obtendo-se informações de cada LED.
+Comumente, essa tecnologia se associa, também, à utilização da potência óptica no algoritmo de posicionamento. No entanto na utilização dessa técnica em sistemas de CDMA, atrasos aleatórios entre os sinais geram grande montante de interferência de acesso múltiplo que influenciam no erro de posicionamento.
+
+Um importante ponto a se considerar nas técnicas de CDMA é a influência negativa na função de iluminação dependendo do padrão de codificação utilizado. A maneira de contornar é a padronização dos códigos de comunicação para métodos que definem a potência média de saída nos LEDs, tais como códigos de comunicação por rádio frequência (RF - \textit{Radio Frequency}), que tem uma potência de saída média de 50\%~\cite{7737307}.
+
+\subsection{O Estado da Arte} \label{estadodaarte}
+
+No contexto desta tecnologia em ascensão, diversos métodos têm sido estudados visando à viabilização e aplicação da VLP\footnote{Principalmente para o posicionamento em ambientes internos e para a mobilidade urbana.}. Frente a este cenário, resultados variados demonstram a evolução atual permitindo entender as perspectivas deste campo de estudo.  A Tabela~\ref{tab:1}, anexada ao final deste texto, expõe os resultados mais relevantes encontrados na literatura, em função do método de posicionamento utilizado, a área abrangida pelo sistema, o erro associado ao posicionamento, e as principais características individuais de cada um.
+%
+\begin{table}[tb]
+\centering
+\caption{O Estado da Arte}
+\label{tab:1}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Pesquisador\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Técnica de\\   VLP\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Alcance de\\   operação (m)\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Precisão\\   Obtida\end{tabular}}} & \textbf{\begin{tabular}[c]{@{}c@{}}Características\\   (método de medição, sincronismo, custo, características individuais)\end{tabular}} \\ \hline
+\textbf{~\cite{nadeem2014highly}} & TDMA & 5x5x3 & 1mm & \begin{tabular}[c]{@{}c@{}}TDoA, sistema de transmissão sincronizado, baixo custo de\\   implementação, resultados de simulação, posicionamento tridimensional\end{tabular} \\ \hline
+\textbf{~\cite{de2015test}} & CDMA & 3x3x2 & 0.7 m & \begin{tabular}[c]{@{}c@{}}RSSI,\\   sistema não sincronizado, baixo custo, resultados experimentais, o acesso\\   múltiplo aumenta o erro de posicionamento.\end{tabular} \\ \hline
+\textbf{~\cite{yang2014three}} & CDMA & 2 x 2 x 2.5 & 2.3cm & \begin{tabular}[c]{@{}c@{}}AoA e RSSI, sistema não sincronizado, baixo custo, resultados de\\   simulação, utilização de um único transmissor e múltiplos receptores,\\   posicionamento tridimensional\end{tabular} \\ \hline
+\textbf{~\cite{kuo2014luxapose}} & SDMA & 0.71 x 0.73 & 0.1 m & \begin{tabular}[c]{@{}c@{}}AoA,\\   sistema não sincronizado, baixo custo, resultados experimentais, capacidade\\   de estimar orientação do receptor\end{tabular} \\ \hline
+\textbf{~\cite{kim2013indoor}} & FDMA & 1 x 1 x 0.6 & 0.2 cm 2.4 cm & RSSI, sistema não sincronizado, baixo custo, resultados experimentais. \\ \hline
+\textbf{~\cite{li2014epsilon}} & FDMA & 20 x 20 x 3 & <O.4 m & \begin{tabular}[c]{@{}c@{}}RSSI,\\   transmissão de dados não sincronizada, baixo custo de implementação,\\   resultados de simulação\end{tabular} \\ \hline
+\textbf{~\cite{sahin2015accuracy}} & TDMA & 3 x 5 x 4 & < 1 m & \begin{tabular}[c]{@{}c@{}}AoA e RSS, sistema previsto em modelo matemático, sem previsão de\\   implementação\end{tabular} \\ \hline
+\textbf{~\cite{qiu2015visible}} & SDMA & 4.7 x 8.6 & 0.56 m & \begin{tabular}[c]{@{}c@{}}Inferência\\   Gaussiana e Bayesiana, sistema não sincronizado, baixo custo, resultados\\   experimentais,\end{tabular} \\ \hline
+\textbf{~\cite{luo2013indoor}} & FDMA & 2x2x2 & 18mm & \begin{tabular}[c]{@{}c@{}}RSSI, sistema de transmissão não sincronizado, baixo custo de\\   implementação, resultados de simulação, sistema com transmissão de dados em\\   alta frequência dento da baixa frequência utilizada para o posicionamento.\\   Constatação de diminuição do erro de posicionamento em dez vezes a cada 10 dB\\   aumentados na relação sinal/ruído.\end{tabular} \\ \hline
+\textbf{~\cite{do2014tdoa}} & TDMA & 5x5x3 & 3,9 cm & \begin{tabular}[c]{@{}c@{}}TDoA,\\   sistema de transmissão sincronizado, alto custo de implementação, resultados\\   de simulação usando MATLAB\end{tabular} \\ \hline
+\textbf{~\cite{rahman2011high}} & SDMA & 1,8x1,8x3,5 & 10 cm & \begin{tabular}[c]{@{}c@{}}Processamento de imagem, sistema não sincronizado, sem parâmetro de\\   custo, resultados de simulações, o sistema tem suas vantagens na simplicidade\\   e independência de referências angulares.\end{tabular} \\ \hline
+\textbf{~\cite{kail2014robust}} & CDMA & 30x30x4 & 0,81m & \begin{tabular}[c]{@{}c@{}}Inferência\\   Bayesiana, sem necessidade de sincronização, baixo custo de implementação,\\   resultados de simulação com MATLAB, considera funcionamento com influência de\\   NLOS\end{tabular} \\ \hline
+\textbf{~\cite{yi2015development}} & TDMA & 1,2x1,2x1,7 & 3cm & \begin{tabular}[c]{@{}c@{}}RSSI, sistema sincronizado, baixo custo de implementação,utilização de\\   bit stuffing para otimização do sistema de VLC, aplicação em robótica móvel\end{tabular} \\ \hline
+\textbf{~\cite{jung2014indoor}} & TDMA & 1,0x1,0x1,3 & 3,24cm & \begin{tabular}[c]{@{}c@{}}RSSI,\\   sistema sincronizado, alto custo, necessário que a altura do receptor seja\\   fixa e conhecida\end{tabular} \\ \hline
+\textbf{~\cite{yamaguchi2014design}} & CDMA & 6x6x0,4 & 8cm & \begin{tabular}[c]{@{}c@{}}OOC, sistema não sincronizado, baixo custo, resultados dados por\\   simulação e modelo matemático, combinação de transmissão de dados para cobertura\\   de áreas maiores\end{tabular} \\ \hline
+\textbf{~\cite{moon2014indoor}} & SDMA & 1,8x1,8x3,5 & 0,09x0,08x0,44 cm & \begin{tabular}[c]{@{}c@{}}Processamento\\   de imagem, sistema não sincronizado, sem parâmetro de custo, resultados por\\   simulação, posicionamento tri dimensional.\end{tabular} \\ \hline
+\textbf{~\cite{yasir2014indoor}} & TDMA & 5x3x3 & 25cm & \begin{tabular}[c]{@{}c@{}}RSSI, sistema sincronizado, baixo custo, resultados experimentais, sensoriamento\\   híbrido com o uso de sensores inerciais, posicionamento tri dimensional\end{tabular} \\ \hline
+\textbf{~\cite{zhang2014asynchronous}} & TDMA & 6x6x4 & 11,2cm & \begin{tabular}[c]{@{}c@{}}RSSI e\\   ToA, sistema não sincronizado com detector de colisão, baixo custo, receptor\\   em altura fixa e conhecida, resultados de simulação\end{tabular} \\ \hline
+\textbf{~\cite{nakazawa2013indoor}} & SDMA & 7,5x5,4x3 & 10cm & \begin{tabular}[c]{@{}c@{}}Processamento de imagem, sistema sincronizado, alto custo, resultados\\   experimentais, utilização de lente olho de peixe para melhoria do\\   posicionamento por abranger mais transmissores no FOV de recepção.\end{tabular} \\ \hline
+\textbf{~\cite{zhang2014theoretical}} & FDMA & 2,2x2,2x3 & - & \begin{tabular}[c]{@{}c@{}}RSSI,\\   sistema não sincronizado, baixo custo, teste da influência de diversos\\   parâmetros do modelo de RSSI para VLP no erro de posicionamento por meio de\\   simulações.\end{tabular} \\ \hline
+\textbf{~\cite{kim2016vehicle}} & SDMA & 20x6x5 & 1m & \begin{tabular}[c]{@{}c@{}}Processamento de imagem, sistema não sincronizado, baixo custo,\\   resultados de simulação, aplicação para mobilidade terrestre.\end{tabular} \\ \hline
+\textbf{~\cite{hu2016demonstration}} & TDMA & 2,5x2,5x2 & 10cm & \begin{tabular}[c]{@{}c@{}}RSSI,\\   sistema sincronizado, baixo custo, resultados experimentais, aplicação para\\   robótica móvel.\end{tabular} \\ \hline
+\textbf{~\cite{see2016investigation}} & FDMA & 0,95x0,9x0,6 & 40cm & \begin{tabular}[c]{@{}c@{}}RSSI, sistema não sincronizado, baixo custo, resultados experimentais,\\   sistema de baixa complexidade.\end{tabular} \\ \hline
+\textbf{~\cite{7781952}} & CDMA & 20x20x5 & <60cm & \begin{tabular}[c]{@{}c@{}}Estimação\\   de parâmetros, sistema não sincronizado, baixo custo, resultados de simulação\\   com transmissores espalhados em forma de domo.\end{tabular} \\ \hline
+\end{tabular}%
+}
+\end{table}

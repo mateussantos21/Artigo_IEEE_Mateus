@@ -1,0 +1,956 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=latex 2017.5.20)  22 JUN 2017 12:11
+entering extended mode
+**./root.tex
+(root.tex
+LaTeX2e <2017-04-15>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(IEEEtran.cls
+Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 458.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-portuges\portuges.l
+df
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count94
+\U@D=\dimen125
+)
+Package babel Info: Making " an active character on input line 145.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2017/01/24 v3.3q English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-portuges\portuges.l
+df
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+\l@brazil = a dialect from \language\l@portuges 
+)
+
+Package babel Warning: Last declared language option is `portuguese',
+(babel)                but the last processed one was `brazil'.
+(babel)                The main language cannot be set as both a global
+(babel)                and a package option. Use `main=portuguese' as
+(babel)                option. Reported on input line 325.
+
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\breakcites\breakcites.sty
+) (C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen126
+\Hy@linkcounter=\count95
+\Hy@pagecounter=\count96
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count97
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 4374.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count98
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen127
+\Fld@menulength=\count99
+\Field@Width=\dimen128
+\Fld@charsize=\dimen129
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring ON on input line 6376.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count100
+\c@Item=\count101
+\c@Hfootnote=\count102
+)
+
+Package hyperref Message: Driver (default): hdvips.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hdvips.def"
+File: hdvips.def 2017/03/14 v6.85a Hyperref driver for dvips
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pdfmark.def"
+File: pdfmark.def 2017/03/14 v6.85a Hyperref definitions for pdfmark specials
+
+
+Package hyperref Warning: You have enabled option `breaklinks'.
+(hyperref)                But driver `hdvips.def' does not suppport this.
+(hyperref)                Expect trouble with the link areas of broken links.
+
+\pdf@docset=\toks16
+\pdf@box=\box28
+\pdf@toks=\toks17
+\pdf@defaulttoks=\toks18
+\HyField@AnnotCount=\count103
+\Fld@listcount=\count104
+\c@bookmark@seq@number=\count105
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip44
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 28.
+
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\breakurl\breakurl.sty
+Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+)
+\XKV@depth=\count106
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\burl@toks=\toks21
+)
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\lineno\lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count107
+\output=\toks22
+\linenoprevgraf=\count108
+\linenumbersep=\dimen130
+\linenumberwidth=\dimen131
+\c@linenumber=\count109
+\c@pagewiselinenumber=\count110
+\c@LN@truepage=\count111
+\c@internallinenumber=\count112
+\c@internallinenumbers=\count113
+\quotelinenumbersep=\dimen132
+\bframerule=\dimen133
+\bframesep=\dimen134
+\bframebox=\box29
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen135
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count114
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count115
+\leftroot@=\count116
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count117
+\DOTSCASE@=\count118
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count119
+\c@MaxMatrixCols=\count120
+\dotsspace@=\muskip11
+\c@parentequation=\count121
+\dspbrk@lvl=\count122
+\tag@help=\toks24
+\row@=\count123
+\column@=\count124
+\maxfields@=\count125
+\andhelp@=\toks25
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks26
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen144
+\extrarowheight=\dimen145
+\NC@list=\toks28
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\Mateus\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen146
+\captionmargin@=\dimen147
+\captionwidth=\dimen148
+\caption@tempdima=\dimen149
+\caption@indent=\dimen150
+\caption@parindent=\dimen151
+\caption@hangindent=\dimen152
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+\c@KVtest=\count126
+\sf@farskip=\skip50
+\sf@captopadj=\dimen153
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
+\c@subfigure=\count127
+\c@subfigure@save=\count128
+\c@lofdepth=\count129
+\c@subtable=\count130
+\c@subtable@save=\count131
+\c@lotdepth=\count132
+\sf@top=\skip53
+\sf@bottom=\skip54
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (root.aux)
+\openout1 = `root.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 277.
+LaTeX Font Info:    ... okay on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 277.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 277.
+
+-- Lines per column: 58 (exact).
+\AtBeginShipoutBox=\box32
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\dvips.def"
+File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+Package hyperref Info: Link coloring ON on input line 277.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count133
+)
+LaTeX Info: Redefining \ref on input line 277.
+LaTeX Info: Redefining \pageref on input line 277.
+LaTeX Info: Redefining \nameref on input line 277.
+
+(root.out) (root.out)
+\@outlinefile=\write3
+\openout3 = `root.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 282.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) (Introduction.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+) (Comunicacao.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+
+! Undefined control sequence.
+l.9     \includegraphics
+                        [width = 8 cm]{FIGURA1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (posicionamento.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [1
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+
+! Undefined control sequence.
+l.7     \includegraphics
+                        {FIGURA2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 8.
+! Undefined control sequence.
+l.37     \includegraphics
+                         [width = 17 cm]{FIGURA3}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+[2]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+
+! Undefined control sequence.
+l.85 \resizebox
+               {\textwidth}{!}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.85 \resizebox{\textwidth}
+                           {!}{%
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.85 \resizebox{\textwidth}
+                           {!}{%
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (282.51651pt too wide) in paragraph at lines 85--115
+ []\T1/ptm/m/n/8 ![] 
+ []
+
+) (aplicacoes.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 4.
+ [3]) (Conclusion.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+) (root.bbl
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 176.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 176.
+ [4])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 312.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 312.
+
+! Undefined control sequence.
+<argument> ...owidth }\centering \includegraphics 
+                                                  [width=1in,height=1.25in,c...
+l.312 ...eussantos.eps}}]{Mateus Rodrigues Santos}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (133.75975pt too wide) in paragraph at lines 312--312
+ []\T1/ptm/m/n/8 [width=1in,height=1.25in,clip,keepaspectratio]mateussantos.eps
+ 
+ []
+
+! Undefined control sequence.
+<argument> ...owidth }\centering \includegraphics 
+                                                  [width=1in,height=1.25in,c...
+l.312 ...eussantos.eps}}]{Mateus Rodrigues Santos}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (133.75975pt too wide) in paragraph at lines 312--312
+ []\T1/ptm/m/n/8 [width=1in,height=1.25in,clip,keepaspectratio]mateussantos.eps
+ 
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 316.
+! Undefined control sequence.
+<argument> ...owidth }\centering \includegraphics 
+                                                  [width=1in,height=1.25in,c...
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ip,keepaspectratio]{Danilo_Lima.eps}
+                                                  \end {minipage}
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (135.22705pt too wide) in paragraph at lines 316--316
+ []\T1/ptm/m/n/8 [width=1in,height=1.25in,clip,keepaspectratio]Danilo$[]\OML/cm
+m/m/it/8 ima:eps$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+<argument> ...owidth }\centering \includegraphics 
+                                                  [width=1in,height=1.25in,c...
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ip,keepaspectratio]{Danilo_Lima.eps}
+                                                  \end {minipage}
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (135.22705pt too wide) in paragraph at lines 316--316
+ []\T1/ptm/m/n/8 [width=1in,height=1.25in,clip,keepaspectratio]Danilo$[]\OML/cm
+m/m/it/8 ima:eps$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.316 ...{Danilo_Lima.eps}}]{Danilo Alves de Lima}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 322.
+! Undefined control sequence.
+<argument> ...owidth }\centering \includegraphics 
+                                                  [width=1in,height=1.25in,c...
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ctratio]{Arthur_de_Miranda_Neto.eps}
+                                                  \end {minipage}
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (174.28615pt too wide) in paragraph at lines 322--322
+ []\T1/ptm/m/n/8 [width=1in,height=1.25in,clip,keepaspectratio]Arthur$[]\OML/cm
+m/m/it/8 e[]iranda[]eto:eps$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+<argument> ...owidth }\centering \includegraphics 
+                                                  [width=1in,height=1.25in,c...
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ctratio]{Arthur_de_Miranda_Neto.eps}
+                                                  \end {minipage}
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (174.28615pt too wide) in paragraph at lines 322--322
+ []\T1/ptm/m/n/8 [width=1in,height=1.25in,clip,keepaspectratio]Arthur$[]\OML/cm
+m/m/it/8 e[]iranda[]eto:eps$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.322 ...randa_Neto.eps}}]{Arthur de Miranda Neto}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 328.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 328.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
+ (root.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
+Package rerunfilecheck Info: File `root.out' has not changed.
+(rerunfilecheck)             Checksum: 32B86990CABB887EB1C07247855188F3;1118.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
+ ) 
+Here is how much of TeX's memory you used:
+ 8147 strings out of 493329
+ 124945 string characters out of 3139147
+ 249451 words of memory out of 3000000
+ 11578 multiletter control sequences out of 15000+200000
+ 107407 words of font info for 106 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 53i,15n,92p,1462b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on root.dvi (5 pages, 81696 bytes).
